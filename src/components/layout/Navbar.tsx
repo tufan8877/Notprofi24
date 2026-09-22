@@ -75,10 +75,6 @@ export function Navbar() {
                 return <li key={link.href}><Link href={link.href} onClick={() => setIsMobileMenuOpen(false)} className={`block py-2 text-lg font-medium border-b border-border/50 ${isActive ? "text-primary font-bold" : "text-foreground"}`}>{link.label}</Link></li>;
               })}
             </ul>
-            <div className="bg-muted p-4 rounded-lg flex flex-col items-center text-center">
-              <span className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">Jetzt anrufen</span>
-              <a href="tel:06766166646" className="text-2xl font-bold text-primary flex items-center gap-2"><Phone className="w-6 h-6" />0676 61 666 46</a>
-            </div>
           </nav>
         </div>
       )}
