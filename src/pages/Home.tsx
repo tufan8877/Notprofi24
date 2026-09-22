@@ -10,12 +10,10 @@ import {
   Zap, 
   Hammer, 
   Key, 
-  Grid2X2,
   ArrowRight,
   CheckCircle2
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   const fadeIn = {
@@ -37,7 +35,6 @@ export default function Home() {
     { icon: <Zap className="w-10 h-10 mb-4 text-secondary" />, title: "Elektriker", desc: "Stromausfall, Sicherungsprobleme, Kurzschluss" },
     { icon: <Hammer className="w-10 h-10 mb-4 text-secondary" />, title: "Dachdecker", desc: "Sturmschäden, Undichte Dächer, Ziegel" },
     { icon: <Key className="w-10 h-10 mb-4 text-secondary" />, title: "Schlosser", desc: "Ausgesperrt, Defekte Schlösser, Einbruchschutz" },
-    { icon: <Grid2X2 className="w-10 h-10 mb-4 text-secondary" />, title: "Glaser", desc: "Glasbruch, Fensterreparatur, Notverglasung" }
   ];
 
   return (
@@ -140,7 +137,7 @@ export default function Home() {
           </div>
 
           <motion.div 
-            className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 max-w-5xl mx-auto"
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
@@ -148,15 +145,15 @@ export default function Home() {
           >
             {services.map((service, index) => (
               <motion.div key={index} variants={fadeIn}>
-                <Card className="h-full hover:shadow-xl hover:border-secondary/50 transition-all duration-300 group border-border/50 bg-white">
-                  <CardContent className="p-8 text-center flex flex-col items-center">
-                    <div className="p-4 rounded-full bg-primary/5 group-hover:bg-primary/10 transition-colors mb-2">
+                <Link href={"/leistungen#" + service.title.toLowerCase()} className="h-full block">
+                  <div className="h-full min-h-[190px] sm:min-h-[220px] bg-white rounded-2xl border border-border/60 shadow-sm hover:shadow-lg hover:border-secondary/50 transition-all duration-300 p-5 sm:p-7 text-center flex flex-col items-center justify-center group">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center mb-4 [&_svg]:mb-0 [&_svg]:w-8 [&_svg]:h-8">
                       {service.icon}
                     </div>
-                    <h3 className="text-xl font-bold mb-3 text-primary">{service.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
-                  </CardContent>
-                </Card>
+                    <h3 className="text-lg sm:text-xl font-bold mb-2 text-primary">{service.title}</h3>
+                    <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
+                  </div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -244,7 +241,7 @@ export default function Home() {
               className="bg-primary text-white rounded-3xl p-10 h-full flex flex-col justify-center relative overflow-hidden"
             >
               <div className="absolute top-0 right-0 p-8 opacity-5">
-                <Grid2X2 className="w-48 h-48" />
+                <ShieldCheck className="w-48 h-48" />
               </div>
               <div className="relative z-10">
                 <h2 className="text-3xl font-bold mb-4">Für Hausverwaltungen</h2>
