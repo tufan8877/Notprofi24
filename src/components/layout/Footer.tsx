@@ -9,10 +9,19 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           
           <div className="space-y-4">
-            <div className="flex items-center gap-3 mb-4">
+            <Link
+              href="/"
+              onClick={() => {
+                if (window.location.pathname === "/") {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }
+              }}
+              className="flex items-center gap-3 mb-4 w-fit"
+              aria-label="Zur Startseite"
+            >
               <LogoIcon size={36} />
               <LogoText variant="light" />
-            </div>
+            </Link>
             <p className="text-primary-foreground/70 leading-relaxed text-sm">
               Ihr zuverlässiger Notdienst-Vermittler in Wien und Umgebung. Wir sind 24 Stunden am Tag, 7 Tage die Woche für Sie im Einsatz. Schnelle Hilfe bei Rohrbrüchen, Stromausfällen und mehr.
             </p>
