@@ -37,7 +37,7 @@ export default function UeberUns() {
       {/* Mission */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div className="max-w-4xl mx-auto">
             <div>
               <h2 className="text-3xl font-bold text-primary mb-6">Unsere Mission: Sicherheit und schnelle Hilfe in Wien.</h2>
               <div className="space-y-6 text-lg text-muted-foreground">
@@ -52,14 +52,7 @@ export default function UeberUns() {
                 </p>
               </div>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-secondary/20 rounded-3xl transform translate-x-4 -translate-y-4 -z-10" />
-              <img 
-                src="/images/team-confidence.jpg" 
-                alt="Vertrauensvolles Team" 
-                className="rounded-3xl shadow-lg object-cover w-full h-[500px]"
-              />
-            </div>
+            
           </div>
         </div>
       </section>
