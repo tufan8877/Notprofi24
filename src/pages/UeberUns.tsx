@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "wouter";
 import { BadgeCheck, Award, Clock, HeartHandshake } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 export default function UeberUns() {
   return (
@@ -95,8 +93,6 @@ export default function UeberUns() {
         </div>
       </section>
 
-    </div>
-      </section>
     </div>
   );
 }
