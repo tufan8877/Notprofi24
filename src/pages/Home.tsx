@@ -101,7 +101,7 @@ export default function Home() {
       {/* Trust Bar */}
       <div className="bg-white border-b py-8 shadow-sm relative z-30 -mt-10 mx-4 md:mx-auto max-w-5xl rounded-xl">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-border">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:divide-x md:divide-border">
             <div className="flex flex-col items-center justify-center p-4">
               <Clock className="w-8 h-8 text-primary mb-2" />
               <span className="font-bold text-lg">24/7 Service</span>
