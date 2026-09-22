@@ -32,14 +32,14 @@ export default function Kontakt() {
               <div className="w-20 h-20 bg-primary text-white rounded-full flex items-center justify-center mx-auto mb-6"><Phone className="w-10 h-10" /></div>
               <h2 className="text-2xl font-bold text-primary mb-2">24/7 Notruf-Hotline</h2>
               <p className="text-muted-foreground mb-8">Der schnellste Weg zur Hilfe. Ein Disponent nimmt Ihren Anruf sofort entgegen.</p>
-              <a href="tel:06766166646" className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white font-bold text-2xl py-4 px-8 rounded-full w-full transition-colors">0676 61 666 46</a>
+              <a href="tel:+436766166646" aria-label="Notprofi24 Notruf unter 0676 61 666 46 anrufen" className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-white font-bold text-2xl py-4 px-8 rounded-full w-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2">0676 61 666 46</a>
             </div>
 
             <div className="bg-white p-10 rounded-3xl shadow-sm border border-border text-center hover:shadow-md transition-shadow">
-              <div className="w-20 h-20 bg-[#25D366] text-white rounded-full flex items-center justify-center mx-auto mb-6"><MessageCircle className="w-10 h-10" /></div>
+              <div className="w-20 h-20 bg-[#128C3E] text-white rounded-full flex items-center justify-center mx-auto mb-6"><MessageCircle className="w-10 h-10" /></div>
               <h2 className="text-2xl font-bold text-primary mb-2">WhatsApp Notfall</h2>
               <p className="text-muted-foreground mb-8">Senden Sie uns schnell und unkompliziert Details oder Fotos Ihres Schadens.</p>
-              <a href="https://wa.me/436766166646" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#25D366]/90 text-white font-bold text-xl py-4 px-8 rounded-full w-full transition-colors">Chat öffnen</a>
+              <a href="https://wa.me/436766166646" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Chat mit Notprofi24 öffnen" className="inline-flex items-center justify-center bg-[#128C3E] hover:bg-[#0f7a36] text-white font-bold text-xl py-4 px-8 rounded-full w-full transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">Chat öffnen</a>
             </div>
           </div>
 
