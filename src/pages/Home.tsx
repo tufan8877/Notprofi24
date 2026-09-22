@@ -5,6 +5,7 @@ import {
   MessageCircle, 
   ShieldCheck, 
   Clock, 
+  Gauge, 
   ThumbsUp, 
   Wrench, 
   Zap, 
@@ -108,7 +109,7 @@ export default function Home() {
               <span className="text-sm text-muted-foreground">Immer erreichbar</span>
             </div>
             <div className="flex flex-col items-center justify-center p-4">
-              <Zap className="w-8 h-8 text-primary mb-2" />
+              <Gauge className="w-8 h-8 text-primary mb-2" />
               <span className="font-bold text-lg">Schnelle Hilfe</span>
               <span className="text-sm text-muted-foreground">Kurze Wartezeiten</span>
             </div>
