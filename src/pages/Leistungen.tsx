@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Wrench, Zap, Hammer, Key, Grid2X2, Phone, CheckCircle2 } from "lucide-react";
+import { Wrench, Zap, Hammer, Key, Phone, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Leistungen() {
@@ -31,13 +31,6 @@ export default function Leistungen() {
       icon: <Key className="w-12 h-12 text-secondary" />,
       description: "Ausgesperrt oder der Schlüssel ist abgebrochen? Wir vermitteln seriöse Schlosser, die schnell vor Ort helfen und je nach Situation eine möglichst schonende Türöffnung durchführen.",
       features: ["Zugefallene Türen (beschädigungsfreie Öffnung)", "Abgebrochene Schlüssel im Zylinder", "Einbruchschäden & Notverriegelung", "Defekte Schließanlagen"]
-    },
-    {
-      id: "glaser",
-      title: "Glaser Notdienst",
-      icon: <Grid2X2 className="w-12 h-12 text-secondary" />,
-      description: "Zerbrochene Fensterscheiben oder Auslagen sind ein hohes Sicherheits- und Verletzungsrisiko. Sofortige Notverglasung bietet Schutz.",
-      features: ["Glasbruch durch Sturm oder Unfall", "Einbruchschäden an Fenstern/Türen", "Notverglasung zur Sicherung", "Zerstörte Schaufenster"]
     }
   ];
 
