@@ -8,7 +8,7 @@ export default function Leistungen() {
       id: "installateur",
       title: "Installateur Notdienst",
       icon: <Wrench className="w-12 h-12 text-secondary" />,
-      description: "Ein Rohrbruch oder ein Heizungsausfall im Winter duldend keinen Aufschub. Wir vermitteln sofort kompetente Installateure.",
+      description: "Ein Rohrbruch oder ein Heizungsausfall im Winter duldet keinen Aufschub. Wir vermitteln schnell den passenden Installateur für Ihren Notfall.",
       features: ["Wasserrohrbruch & Leckagen", "Heizungsausfall & Kesselschäden", "Verstopfte Abflüsse & Kanäle", "Gasgebrechen (sofortige Sicherung)"]
     },
     {
@@ -29,7 +29,7 @@ export default function Leistungen() {
       id: "schlosser",
       title: "Schlosser Notdienst",
       icon: <Key className="w-12 h-12 text-secondary" />,
-      description: "Ausgesperrt oder der Schlüssel ist abgebrochen? Wir vermitteln seriöse Schlosser, die Ihnen schnell und schonend die Tür öffnen.",
+      description: "Ausgesperrt oder der Schlüssel ist abgebrochen? Wir vermitteln seriöse Schlosser, die schnell vor Ort helfen und je nach Situation eine möglichst schonende Türöffnung durchführen.",
       features: ["Zugefallene Türen (beschädigungsfreie Öffnung)", "Abgebrochene Schlüssel im Zylinder", "Einbruchschäden & Notverriegelung", "Defekte Schließanlagen"]
     },
     {
