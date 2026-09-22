@@ -18,6 +18,10 @@ import UeberUns from "@/pages/UeberUns";
 import Kontakt from "@/pages/Kontakt";
 import Impressum from "@/pages/Impressum";
 import Datenschutz from "@/pages/Datenschutz";
+import InstallateurNotdienst from "@/pages/InstallateurNotdienst";
+import ElektrikerNotdienst from "@/pages/ElektrikerNotdienst";
+import DachdeckerNotdienst from "@/pages/DachdeckerNotdienst";
+import SchlosserNotdienst from "@/pages/SchlosserNotdienst";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +35,10 @@ function Router() {
         <Switch>
           <Route path="/" component={Home} />
           <Route path="/leistungen" component={Leistungen} />
+          <Route path="/installateur-notdienst-wien" component={InstallateurNotdienst} />
+          <Route path="/elektriker-notdienst-wien" component={ElektrikerNotdienst} />
+          <Route path="/dachdecker-notdienst-wien" component={DachdeckerNotdienst} />
+          <Route path="/schlosser-notdienst-wien" component={SchlosserNotdienst} />
           <Route path="/privatkunden" component={Privatkunden} />
           <Route path="/hausverwaltungen" component={Hausverwaltungen} />
           <Route path="/ueber-uns" component={UeberUns} />
