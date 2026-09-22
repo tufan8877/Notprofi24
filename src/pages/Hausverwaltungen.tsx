@@ -54,7 +54,7 @@ export default function Hausverwaltungen() {
               <div className="absolute inset-0 bg-primary/5 rounded-3xl transform -translate-x-6 translate-y-6 -z-10" />
               <img 
                 src="/images/apartment-building.jpg" 
-                alt="Modernes Wohnhaus in Wien" 
+                alt="Modernes Wohnhaus in Wien und Umgebung" 
                 className="rounded-3xl shadow-xl object-cover w-full h-[600px]"
               />
             </div>
