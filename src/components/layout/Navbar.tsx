@@ -40,7 +40,7 @@ export function Navbar() {
     <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-[background-color,border-color,box-shadow,padding] duration-200 ${isScrolled ? "bg-white border-border shadow-sm py-3" : "bg-primary border-transparent py-4 text-white"}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <a href="/" onClick={(event) => { event.preventDefault(); setIsMobileMenuOpen(false); if (location === "/") { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }); } else { navigate("/"); window.setTimeout(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }), 0); } }} className="flex items-center gap-3 group">
+          <a href="/" onClick={(event) => { event.preventDefault(); setIsMobileMenuOpen(false); if (location === "/") { window.scrollTo({ top: 0, left: 0, behavior: "smooth" }); } else { navigate("/"); window.setTimeout(() => window.scrollTo({ top: 0, left: 0, behavior: "auto" }), 0); } }} className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 rounded-lg" aria-label="Notprofi24 Startseite">
             <LogoIcon variant={isScrolled ? "dark" : "light"} size={36} />
             <LogoText variant={isScrolled ? "dark" : "light"} />
           </a>
@@ -48,7 +48,7 @@ export function Navbar() {
             <ul className="flex items-center gap-6">
               {navLinks.map((link) => {
                 const isActive = location === link.href;
-                return <li key={link.href}><Link href={link.href} className={`text-sm font-medium transition-colors hover:text-secondary ${isActive ? "text-secondary font-semibold" : isScrolled ? "text-foreground/80" : "text-white/90"}`}>{link.label}</Link></li>;
+                return <li key={link.href}><Link href={link.href} aria-current={isActive ? "page" : undefined} className={`text-sm font-medium transition-colors hover:text-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-sm ${isActive ? "text-secondary font-semibold" : isScrolled ? "text-foreground/80" : "text-white/90"}`}>{link.label}</Link></li>;
               })}
             </ul>
             <div className={`flex items-center gap-4 border-l pl-6 ${isScrolled ? "border-border" : "border-white/20"}`}>
@@ -59,8 +59,8 @@ export function Navbar() {
             </div>
           </nav>
           <div className="flex items-center gap-4 md:hidden">
-            <a href="tel:06766166646" className={`p-2 rounded-full ${isScrolled ? "bg-primary text-white" : "bg-white text-primary"}`}><Phone className="w-5 h-5" /></a>
-            <button onClick={() => setIsMobileMenuOpen(v => !v)} className={`p-2 focus:outline-none ${isScrolled ? "text-primary" : "text-white"}`} aria-label="Menü öffnen oder schließen">
+            <a href="tel:+436766166646" aria-label="Notprofi24 telefonisch anrufen" className={`p-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2 ${isScrolled ? "bg-primary text-white" : "bg-white text-primary"}`}><Phone className="w-5 h-5" aria-hidden="true" /></a>
+            <button onClick={() => setIsMobileMenuOpen(v => !v)} className={`p-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-secondary rounded-md ${isScrolled ? "text-primary" : "text-white"}`} aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"} aria-expanded={isMobileMenuOpen} aria-controls="mobile-navigation">
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
@@ -68,7 +68,7 @@ export function Navbar() {
       </div>
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg z-40">
-          <nav className="p-4 sm:p-5">
+          <nav id="mobile-navigation" aria-label="Mobile Navigation" className="p-4 sm:p-5">
             <ul className="flex flex-col gap-2">
               {navLinks.map((link) => {
                 const isActive = location === link.href;
@@ -78,6 +78,7 @@ export function Navbar() {
                     <Link
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
+                      aria-current={isActive ? "page" : undefined}
                       className={`group flex items-center gap-4 rounded-xl px-4 py-3.5 transition-colors ${isActive ? "bg-primary/5 text-primary" : "text-foreground hover:bg-muted/70"}`}
                     >
                       <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${isActive ? "bg-secondary text-primary" : "bg-muted text-primary"}`}>
