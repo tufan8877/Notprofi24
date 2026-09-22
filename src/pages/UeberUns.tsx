@@ -95,17 +95,7 @@ export default function UeberUns() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-white text-center">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold text-primary mb-6">Sie möchten Teil unseres Netzwerks werden?</h2>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Wir suchen stets zuverlässige Fachbetriebe (Installateure, Elektriker, Schlosser, etc.) in Wien, die unseren hohen Qualitätsansprüchen genügen.
-          </p>
-          <Button size="lg" variant="outline" className="rounded-full border-primary text-primary hover:bg-primary hover:text-white" asChild>
-            <Link href="/kontakt">Kontakt für Partnerbetriebe</Link>
-          </Button>
-        </div>
+    </div>
       </section>
     </div>
   );
