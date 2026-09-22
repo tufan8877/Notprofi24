@@ -12,6 +12,22 @@ const seo: Record<string, { title: string; description: string; robots?: string 
     title: "Notdienste in Wien: Installateur, Elektriker & mehr | Notprofi24",
     description: "Notprofi24 vermittelt Fachbetriebe für Rohrbruch, Heizungsausfall, Stromausfall, Dachschäden und Türöffnungen in Wien und Umgebung."
   },
+  "/installateur-notdienst-wien": {
+    title: "Installateur Notdienst Wien & Umgebung | Notprofi24",
+    description: "24/7 Installateur-Notdienst-Vermittlung in Wien und Umgebung bei Rohrbruch, Leckagen, Heizungsausfall und verstopften Abflüssen."
+  },
+  "/elektriker-notdienst-wien": {
+    title: "Elektriker Notdienst Wien & Umgebung | Notprofi24",
+    description: "24/7 Elektriker-Notdienst-Vermittlung in Wien und Umgebung bei Stromausfall, Kurzschluss, Sicherungsproblemen und dringenden Elektro-Störungen."
+  },
+  "/dachdecker-notdienst-wien": {
+    title: "Dachdecker Notdienst Wien & Umgebung | Notprofi24",
+    description: "Dachdecker-Notdienst-Vermittlung in Wien und Umgebung bei Sturmschäden, Undichtheiten, Wassereintritt und beschädigten Dachziegeln."
+  },
+  "/schlosser-notdienst-wien": {
+    title: "Schlosser Notdienst Wien & Umgebung | Notprofi24",
+    description: "24/7 Schlosser-Notdienst-Vermittlung in Wien und Umgebung bei zugefallenen Türen, defekten Schlössern und abgebrochenen Schlüsseln."
+  },
   "/privatkunden": {
     title: "24/7 Notdienst für Privatkunden in Wien & Umgebung | Notprofi24",
     description: "Schnelle Notdienst-Vermittlung für Privatkunden: Wir vermitteln passende regionale Fachbetriebe für dringende Probleme rund um Haus und Wohnung."
