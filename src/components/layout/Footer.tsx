@@ -66,7 +66,6 @@ export function Footer() {
               <li><Link href="/leistungen#elektriker" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Elektriker Notdienst</Link></li>
               <li><Link href="/leistungen#dachdecker" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Dachdecker Notdienst</Link></li>
               <li><Link href="/leistungen#schlosser" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Schlosser Notdienst</Link></li>
-              <li><Link href="/leistungen#glaser" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Glaser Notdienst</Link></li>
             </ul>
           </div>
 
