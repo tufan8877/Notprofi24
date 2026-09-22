@@ -32,10 +32,10 @@ export default function Home() {
   };
 
   const services = [
-    { icon: <Wrench className="w-10 h-10 mb-4 text-secondary" />, title: "Installateur", desc: "Rohrbruch, Wasserschaden, Heizungsausfall" },
-    { icon: <Zap className="w-10 h-10 mb-4 text-secondary" />, title: "Elektriker", desc: "Stromausfall, Sicherungsprobleme, Kurzschluss" },
-    { icon: <Hammer className="w-10 h-10 mb-4 text-secondary" />, title: "Dachdecker", desc: "Sturmschäden, Undichte Dächer, Ziegel" },
-    { icon: <Key className="w-10 h-10 mb-4 text-secondary" />, title: "Schlosser", desc: "Ausgesperrt, Defekte Schlösser, Einbruchschutz" },
+    { icon: <Wrench className="w-10 h-10 mb-4 text-secondary" />, title: "Installateur", href: "/installateur-notdienst-wien", desc: "Rohrbruch, Wasserschaden, Heizungsausfall" },
+    { icon: <Zap className="w-10 h-10 mb-4 text-secondary" />, title: "Elektriker", href: "/elektriker-notdienst-wien", desc: "Stromausfall, Sicherungsprobleme, Kurzschluss" },
+    { icon: <Hammer className="w-10 h-10 mb-4 text-secondary" />, title: "Dachdecker", href: "/dachdecker-notdienst-wien", desc: "Sturmschäden, Undichte Dächer, Ziegel" },
+    { icon: <Key className="w-10 h-10 mb-4 text-secondary" />, title: "Schlosser", href: "/schlosser-notdienst-wien", desc: "Ausgesperrt, Defekte Schlösser, Einbruchschutz" },
   ];
 
   return (
@@ -146,7 +146,7 @@ export default function Home() {
           >
             {services.map((service, index) => (
               <motion.div key={index} variants={fadeIn}>
-                <Link href={"/leistungen#" + service.title.toLowerCase()} className="h-full block">
+                <Link href={service.href} className="h-full block">
                   <div className="h-full min-h-[190px] sm:min-h-[220px] bg-white rounded-2xl border border-border/60 shadow-sm hover:shadow-lg hover:border-secondary/50 transition-all duration-300 p-5 sm:p-7 text-center flex flex-col items-center justify-center group">
                     <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center mb-4 [&_svg]:mb-0 [&_svg]:w-8 [&_svg]:h-8">
                       {service.icon}
