@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { CookieBanner } from "@/components/CookieBanner";
+import { SeoManager } from "@/components/SeoManager";
 import NotFound from "@/pages/not-found";
 
 import Home from "@/pages/Home";
@@ -23,6 +24,7 @@ const queryClient = new QueryClient();
 function Router() {
   return (
     <div className="flex flex-col min-h-screen">
+      <SeoManager />
       <ScrollToTop />
       <Navbar />
       <main className="flex-1 pt-[72px]">
