@@ -37,7 +37,7 @@ export default function UeberUns() {
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
           <div className="max-w-4xl mx-auto">
             <div>
-              <h2 className="text-3xl font-bold text-primary mb-6">Unsere Mission: Sicherheit und schnelle Hilfe in Wien.</h2>
+              <h2 className="text-3xl font-bold text-primary mb-6">Unsere Mission: Sicherheit und schnelle Hilfe in Wien und Umgebung.</h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
                   Notprofi24 wurde aus einer einfachen Erkenntnis heraus gegründet: In einem Notfall – sei es ein Rohrbruch mitten in der Nacht oder eine zugefallene Tür – sind Menschen gestresst, überfordert und anfällig für unseriöse Anbieter.
