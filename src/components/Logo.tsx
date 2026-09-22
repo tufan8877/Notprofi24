@@ -34,7 +34,7 @@ export function LogoText({ variant = "light" }: { variant?: "light" | "dark" }) 
         Notprofi<span className="text-secondary">24</span>
       </span>
       <span className={`text-[10px] font-semibold uppercase tracking-widest ${sub}`}>
-        24h Notdienst Wien
+        24h Notdienst
       </span>
     </div>
   );
