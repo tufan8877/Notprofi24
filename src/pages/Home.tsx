@@ -59,7 +59,7 @@ export default function Home() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6">
                 <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse" />
-                <span className="text-sm font-medium tracking-wide uppercase">24/7 Notdienst-Vermittlung Wien</span>
+                <span className="text-sm font-medium tracking-wide uppercase">24/7 Notdienst-Vermittlung</span>
               </div>
               
               <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
