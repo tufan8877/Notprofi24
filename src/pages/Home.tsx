@@ -270,7 +270,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6 text-center max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary">Brauchen Sie sofort Hilfe?</h2>
           <p className="text-xl text-muted-foreground mb-10">
-            Zögern Sie nicht. Unsere Disponenten sind jetzt erreichbar und organisieren umgehend den passenden Experten für Ihren Notfall in Wien.
+            Zögern Sie nicht. Unsere Disponenten sind jetzt erreichbar und organisieren umgehend den passenden Experten für Ihren Notfall in Wien und Umgebung.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-bold text-xl h-16 px-10 rounded-full shadow-lg hover:-translate-y-1 transition-transform" asChild>
