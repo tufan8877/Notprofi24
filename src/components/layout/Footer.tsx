@@ -62,11 +62,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Unsere Notdienste</h3>
             <ul className="space-y-3">
-              <li className="text-primary-foreground/70 text-sm">Installateur Notdienst</li>
-              <li className="text-primary-foreground/70 text-sm">Elektriker Notdienst</li>
-              <li className="text-primary-foreground/70 text-sm">Dachdecker Notdienst</li>
-              <li className="text-primary-foreground/70 text-sm">Schlosser Notdienst</li>
-              <li className="text-primary-foreground/70 text-sm">Glaser Notdienst</li>
+              <li><Link href="/leistungen#installateur" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Installateur Notdienst</Link></li>
+              <li><Link href="/leistungen#elektriker" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Elektriker Notdienst</Link></li>
+              <li><Link href="/leistungen#dachdecker" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Dachdecker Notdienst</Link></li>
+              <li><Link href="/leistungen#schlosser" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Schlosser Notdienst</Link></li>
+              <li><Link href="/leistungen#glaser" className="text-primary-foreground/70 hover:text-secondary transition-colors text-sm">Glaser Notdienst</Link></li>
             </ul>
           </div>
 
