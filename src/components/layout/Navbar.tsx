@@ -40,7 +40,7 @@ export function Navbar() {
     <header className={`fixed top-0 left-0 right-0 z-50 border-b transition-[background-color,border-color,box-shadow,padding] duration-200 ${isScrolled ? "bg-white border-border shadow-sm py-3" : "bg-primary border-transparent py-4 text-white"}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="flex items-center gap-3 group">
+          <Link href="/" onClick={() => { setIsMobileMenuOpen(false); if (location === "/") window.scrollTo({ top: 0, left: 0, behavior: "smooth" }); }} className="flex items-center gap-3 group">
             <LogoIcon variant={isScrolled ? "dark" : "light"} size={36} />
             <LogoText variant={isScrolled ? "dark" : "light"} />
           </Link>
