@@ -181,23 +181,25 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center max-w-5xl mx-auto">
-            <div className="relative">
-              <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-6 shadow-lg">1</div>
-              <h3 className="text-2xl font-bold mb-4">Kontakt aufnehmen</h3>
-              <p className="text-primary-foreground/80">Rufen Sie uns an oder schreiben Sie uns per WhatsApp. Wir sind rund um die Uhr erreichbar.</p>
-              <div className="hidden md:block absolute top-10 left-[60%] w-[80%] h-[2px] bg-secondary/30 border-t-2 border-dashed border-secondary/50" />
-            </div>
-            <div className="relative">
-              <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-6 shadow-lg">2</div>
-              <h3 className="text-2xl font-bold mb-4">Notfall schildern</h3>
-              <p className="text-primary-foreground/80">Beschreiben Sie kurz Ihr Problem. Wir vermitteln sofort den passenden Fachbetrieb aus Ihrer Nähe.</p>
-              <div className="hidden md:block absolute top-10 left-[60%] w-[80%] h-[2px] bg-secondary/30 border-t-2 border-dashed border-secondary/50" />
-            </div>
-            <div className="relative">
-              <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-6 shadow-lg">3</div>
-              <h3 className="text-2xl font-bold mb-4">Profi kommt sofort</h3>
-              <p className="text-primary-foreground/80">Ein kompetenter Techniker macht sich auf den Weg zu Ihnen und behebt den Schaden fachgerecht.</p>
+          <div className="relative max-w-4xl mx-auto text-center">
+            <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:gap-x-20 md:gap-y-12 items-start">
+              <div className="col-span-2 max-w-sm mx-auto relative z-10">
+                <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-4 shadow-lg">1</div>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Kontakt aufnehmen</h3>
+                <p className="text-sm md:text-base text-primary-foreground/80">Rufen Sie uns an oder schreiben Sie uns per WhatsApp. Wir sind rund um die Uhr erreichbar.</p>
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-4 shadow-lg">2</div>
+                <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4">Notfall schildern</h3>
+                <p className="text-sm md:text-base text-primary-foreground/80">Beschreiben Sie kurz Ihr Problem. Wir vermitteln sofort den passenden Fachbetrieb aus Ihrer Nähe.</p>
+              </div>
+
+              <div className="relative z-10">
+                <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-4 shadow-lg">3</div>
+                <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4">Profi kommt sofort</h3>
+                <p className="text-sm md:text-base text-primary-foreground/80">Ein kompetenter Techniker macht sich auf den Weg zu Ihnen und behebt den Schaden fachgerecht.</p>
+              </div>
             </div>
           </div>
         </div>
