@@ -206,7 +206,18 @@
 }
 
 @layer base {
+  html, body, #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  html {
+    overscroll-behavior-x: none;
+  }
+
   * {
+    box-sizing: border-box;
     @apply border-border;
   }
   body {
