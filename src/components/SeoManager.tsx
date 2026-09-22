@@ -13,19 +13,19 @@ const seo: Record<string, { title: string; description: string; robots?: string 
     description: "Notprofi24 vermittelt Fachbetriebe für Rohrbruch, Heizungsausfall, Stromausfall, Dachschäden, Türöffnungen und Glasbruch in Wien und Umgebung."
   },
   "/privatkunden": {
-    title: "24/7 Notdienst für Privatkunden in Wien | Notprofi24",
+    title: "24/7 Notdienst für Privatkunden in Wien & Umgebung | Notprofi24",
     description: "Schnelle Notdienst-Vermittlung für Privatkunden: Wir vermitteln passende regionale Fachbetriebe für dringende Probleme rund um Haus und Wohnung."
   },
   "/hausverwaltungen": {
-    title: "Notdienst für Hausverwaltungen in Wien | Notprofi24",
+    title: "Notdienst für Hausverwaltungen Wien & Umgebung | Notprofi24",
     description: "Notprofi24 unterstützt Hausverwaltungen bei der Koordination dringender Einsätze und vermittelt passende Fachbetriebe für mehrere Gewerke."
   },
   "/ueber-uns": {
-    title: "Über Notprofi24 | Notdienst-Vermittlung Wien",
+    title: "Über Notprofi24 | Notdienst-Vermittlung Wien & Umgebung",
     description: "Erfahren Sie mehr über Notprofi24 und unsere Vermittlung passender Fachbetriebe für dringende Notfälle in Wien und Umgebung."
   },
   "/kontakt": {
-    title: "Kontakt & 24/7 Hotline | Notprofi24 Wien",
+    title: "Kontakt & 24/7 Hotline | Notprofi24 Wien & Umgebung",
     description: "Kontaktieren Sie Notprofi24 telefonisch oder per WhatsApp. Wir sind rund um die Uhr für Notdienst-Anfragen erreichbar."
   },
   "/impressum": {
