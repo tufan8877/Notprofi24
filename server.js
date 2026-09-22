@@ -8,9 +8,22 @@ const app = express();
 const port = process.env.PORT || 10000;
 const distPath = path.join(__dirname, 'dist');
 
-app.use(express.static(distPath));
+app.disable('etag');
+
+app.use(express.static(distPath, {
+  etag: false,
+  lastModified: false,
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('index.html')) {
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    } else {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+    }
+  }
+}));
 
 app.get('*', (_req, res) => {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
   res.sendFile(path.join(distPath, 'index.html'));
 });
 
