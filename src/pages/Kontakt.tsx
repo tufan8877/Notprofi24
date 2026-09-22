@@ -39,7 +39,7 @@ export default function Kontakt() {
               <div className="w-20 h-20 bg-[#25D366] text-white rounded-full flex items-center justify-center mx-auto mb-6"><MessageCircle className="w-10 h-10" /></div>
               <h2 className="text-2xl font-bold text-primary mb-2">WhatsApp Notfall</h2>
               <p className="text-muted-foreground mb-8">Senden Sie uns schnell und unkompliziert Details oder Fotos Ihres Schadens.</p>
-              <a href="https://wa.me/436766166646" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#25D366]/90 text-white font-bold text-xl py-4 px-8 rounded-full w-full transition-colors">Chat öffnen (+43 676 61 666 46)</a>
+              <a href="https://wa.me/436766166646" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#25D366]/90 text-white font-bold text-xl py-4 px-8 rounded-full w-full transition-colors">Chat öffnen</a>
             </div>
           </div>
 
