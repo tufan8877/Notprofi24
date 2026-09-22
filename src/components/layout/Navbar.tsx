@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Home, Wrench, UserRound, Building2, Info, Mail, ChevronRight } from "lucide-react";
 import { LogoIcon, LogoText } from "@/components/Logo";
 
 const navLinks = [
-  { href: "/", label: "Startseite" },
-  { href: "/leistungen", label: "Leistungen" },
-  { href: "/privatkunden", label: "Privatkunden" },
-  { href: "/hausverwaltungen", label: "Hausverwaltungen" },
-  { href: "/ueber-uns", label: "Über uns" },
-  { href: "/kontakt", label: "Kontakt" },
+  { href: "/", label: "Startseite", icon: Home },
+  { href: "/leistungen", label: "Leistungen", icon: Wrench },
+  { href: "/privatkunden", label: "Privatkunden", icon: UserRound },
+  { href: "/hausverwaltungen", label: "Hausverwaltungen", icon: Building2 },
+  { href: "/ueber-uns", label: "Über uns", icon: Info },
+  { href: "/kontakt", label: "Kontakt", icon: Mail },
 ];
 
 export function Navbar() {
@@ -68,11 +68,26 @@ export function Navbar() {
       </div>
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b shadow-lg z-40">
-          <nav className="flex flex-col p-4">
-            <ul className="flex flex-col space-y-4 mb-6">
+          <nav className="p-4 sm:p-5">
+            <ul className="flex flex-col gap-2">
               {navLinks.map((link) => {
                 const isActive = location === link.href;
-                return <li key={link.href}><Link href={link.href} onClick={() => setIsMobileMenuOpen(false)} className={`block py-2 text-lg font-medium border-b border-border/50 ${isActive ? "text-primary font-bold" : "text-foreground"}`}>{link.label}</Link></li>;
+                const Icon = link.icon;
+                return (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className={`group flex items-center gap-4 rounded-xl px-4 py-3.5 transition-colors ${isActive ? "bg-primary/5 text-primary" : "text-foreground hover:bg-muted/70"}`}
+                    >
+                      <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${isActive ? "bg-secondary text-primary" : "bg-muted text-primary"}`}>
+                        <Icon className="h-5 w-5" />
+                      </span>
+                      <span className={`flex-1 text-base font-semibold ${isActive ? "text-primary" : ""}`}>{link.label}</span>
+                      <ChevronRight className={`h-5 w-5 transition-transform group-hover:translate-x-0.5 ${isActive ? "text-secondary" : "text-muted-foreground/60"}`} />
+                    </Link>
+                  </li>
+                );
               })}
             </ul>
           </nav>
