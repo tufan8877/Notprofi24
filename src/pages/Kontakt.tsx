@@ -58,7 +58,7 @@ export default function Kontakt() {
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border border-border shadow-sm flex items-start gap-4 h-fit">
+            <div id="allgemeine-anfragen" className="bg-white p-8 rounded-3xl border border-border shadow-sm flex items-start gap-4 h-fit scroll-mt-28">
               <div className="bg-muted p-3 rounded-xl shrink-0"><Mail className="w-5 h-5 text-primary" /></div>
               <div>
                 <h3 className="font-bold text-primary mb-1">Allgemeine Anfragen</h3>
