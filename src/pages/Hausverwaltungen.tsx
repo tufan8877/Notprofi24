@@ -114,7 +114,7 @@ export default function Hausverwaltungen() {
             Lassen Sie uns darüber sprechen, wie wir Ihre Verwaltung entlasten und Ihren Mietern ein Höchstmaß an Sicherheit bieten können.
           </p>
           <Button size="lg" variant="outline" className="rounded-full bg-transparent text-white border-white/30 hover:bg-white/10 h-14 px-8 text-lg" asChild>
-            <Link href="/kontakt">
+            <Link href="/kontakt#allgemeine-anfragen">
               Kontakt aufnehmen
             </Link>
           </Button>
