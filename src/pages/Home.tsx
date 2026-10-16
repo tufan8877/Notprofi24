@@ -100,27 +100,27 @@ export default function Home() {
       </section>
 
       {/* Trust Bar */}
-      <div className="bg-white border-b py-8 shadow-sm relative z-30 -mt-10 mx-4 md:mx-auto max-w-5xl rounded-xl">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:divide-x md:divide-border">
-            <div className="flex flex-col items-center justify-center p-4">
+      <div className="relative z-30 -mt-10 flex justify-center px-4 sm:px-6">
+        <div className="w-full min-w-0 max-w-5xl rounded-xl border-b bg-white px-3 py-6 shadow-sm sm:px-4 sm:py-8">
+          <div className="grid grid-cols-2 gap-3 text-center sm:gap-6 xl:grid-cols-4 xl:divide-x xl:divide-border">
+            <div className="flex min-w-0 flex-col items-center justify-center p-3 sm:p-4">
               <Clock className="w-8 h-8 text-primary mb-2" />
-              <span className="font-bold text-lg">24/7 Service</span>
+              <span className="font-bold text-base sm:text-lg">24/7 Service</span>
               <span className="text-sm text-muted-foreground">Immer erreichbar</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-4">
+            <div className="flex min-w-0 flex-col items-center justify-center p-3 sm:p-4">
               <Gauge className="w-8 h-8 text-primary mb-2" />
-              <span className="font-bold text-lg">Schnelle Hilfe</span>
+              <span className="font-bold text-base sm:text-lg">Schnelle Hilfe</span>
               <span className="text-sm text-muted-foreground">Kurze Wartezeiten</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-4">
+            <div className="flex min-w-0 flex-col items-center justify-center p-3 sm:p-4">
               <ShieldCheck className="w-8 h-8 text-primary mb-2" />
-              <span className="font-bold text-lg">Geprüfte Profis</span>
+              <span className="font-bold text-base sm:text-lg">Geprüfte Profis</span>
               <span className="text-sm text-muted-foreground">Höchste Qualität</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-4">
+            <div className="flex min-w-0 flex-col items-center justify-center p-3 sm:p-4">
               <ThumbsUp className="w-8 h-8 text-primary mb-2" />
-              <span className="font-bold text-lg">Transparent</span>
+              <span className="font-bold text-base sm:text-lg">Transparent</span>
               <span className="text-sm text-muted-foreground">Klare Abläufe</span>
             </div>
           </div>
