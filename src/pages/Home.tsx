@@ -100,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Trust Bar */}
-      <div className="relative z-30 -mt-10 flex justify-center px-4 sm:px-6">
+      <div className="home-trust-bar relative z-30 -mt-10 flex justify-center px-4 sm:px-6">
         <div className="w-full min-w-0 max-w-5xl rounded-xl border-b bg-white px-3 py-6 shadow-sm sm:px-4 sm:py-8">
           <div className="grid grid-cols-2 gap-3 text-center sm:gap-6 xl:grid-cols-4 xl:divide-x xl:divide-border">
             <div className="flex min-w-0 flex-col items-center justify-center p-3 sm:p-4">
@@ -128,7 +128,7 @@ export default function Home() {
       </div>
 
       {/* Services Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="home-services-section py-24 bg-muted/30">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary">Unsere Notdienste</h2>
