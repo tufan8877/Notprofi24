@@ -304,3 +304,15 @@
   outline: 3px solid hsl(var(--secondary));
   outline-offset: 3px;
 }
+
+
+/* Tablet: keep the trust cards fully below the hero image on touch devices. */
+@media (min-width: 768px) and (hover: none) and (pointer: coarse) {
+  .home-trust-bar {
+    margin-top: 0;
+  }
+
+  .home-services-section {
+    padding-top: 3.5rem !important;
+  }
+}
