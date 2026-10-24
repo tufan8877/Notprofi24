@@ -51,7 +51,7 @@ export default function Kontakt() {
                 <div>
                   <h3 className="font-bold text-primary mb-1">Unternehmenssitz</h3>
                   <address className="not-italic text-muted-foreground text-sm leading-relaxed">
-                    Heiligenstädter Straße 152<br />1190 Wien, Österreich<br />
+                    Heiligenstädter Straße 152/6<br />1190 Wien, Österreich<br />
                     <span className="text-xs mt-1 block">(Kein Kundenempfang vor Ort)</span>
                   </address>
                 </div>
