@@ -18,9 +18,9 @@ export default function Impressum() {
             
             <h2 className="text-2xl font-bold text-primary mb-6">Diensteanbieter</h2>
             
-            <p className="font-semibold text-lg mb-1">Tufan Dönmez</p>
+            <p className="font-semibold text-lg mb-1">Tufan Dönmezyürek</p>
             <p className="mb-6">
-              Heiligenstädter Straße 152<br />
+              Heiligenstädter Straße 152/6<br />
               1190 Wien<br />
               Österreich
             </p>
@@ -33,7 +33,7 @@ export default function Impressum() {
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">Unternehmensgegenstand</h3>
             <p className="mb-6">
-              Notdienst-Vermittlungsservice. Vermittlung von Handwerksbetrieben (Installateur, Elektriker, Dachdecker, Schlosser, Glaser) an Endkunden.
+              Notdienst-Vermittlungsservice. Vermittlung von Handwerksbetrieben (Installateur, Elektriker, Dachdecker, Schlosser) an Endkunden.
             </p>
 
             <hr className="my-8 border-border" />
