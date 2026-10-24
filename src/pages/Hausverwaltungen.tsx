@@ -75,6 +75,13 @@ export default function Hausverwaltungen() {
             </div>
           </div>
 
+          <div className="mb-16 rounded-2xl border border-secondary/30 bg-secondary/10 p-6 md:p-8">
+            <h3 className="text-xl md:text-2xl font-bold text-primary mb-3">Keine Vermittlungsgebühr für Ihre Verwaltung oder Bewohner</h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Die Vermittlungsgebühr wird ausschließlich dem beauftragten Fachbetrieb verrechnet. Kosten für Anfahrt und Reparatur sind davon getrennt und werden nach Vereinbarung zwischen Fachbetrieb und Auftraggeber abgerechnet.
+            </p>
+          </div>
+
           {/* Advantages Grid */}
           <h3 className="text-3xl font-bold text-center text-primary mb-12">Ihre Vorteile auf einen Blick</h3>
           
