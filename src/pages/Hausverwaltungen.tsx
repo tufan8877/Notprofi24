@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Phone, Building2, ClipboardCheck, Users, HeadphonesIcon, Building } from "lucide-react";
+import { Phone, Building2, ClipboardCheck, Users, HeadphonesIcon, Building, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Hausverwaltungen() {
@@ -76,9 +76,13 @@ export default function Hausverwaltungen() {
           </div>
 
           <div className="mb-16 rounded-2xl border border-secondary/30 bg-secondary/10 p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-bold text-primary mb-3">Keine Vermittlungsgebühr für Ihre Verwaltung oder Bewohner</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">Transparente Kosten</h3>
+            <ul className="space-y-3 mb-4">
+              <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 shrink-0 text-secondary" /> Keine versteckten Gebühren von Notprofi24</li>
+              <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 shrink-0 text-secondary" /> Keine Vermittlungsgebühr für Verwaltung und Bewohner</li>
+            </ul>
             <p className="text-muted-foreground leading-relaxed">
-              Die Vermittlungsgebühr wird ausschließlich dem beauftragten Fachbetrieb verrechnet. Kosten für Anfahrt und Reparatur sind davon getrennt und werden nach Vereinbarung zwischen Fachbetrieb und Auftraggeber abgerechnet.
+              Kosten für Anfahrt und Reparatur sind davon getrennt und werden nach Vereinbarung zwischen Fachbetrieb und Auftraggeber abgerechnet.
             </p>
           </div>
 
