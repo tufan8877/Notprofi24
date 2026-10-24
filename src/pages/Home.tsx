@@ -232,6 +232,8 @@ export default function Home() {
                   <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> 24/7 Soforthilfe</li>
                   <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Keine langen Warteschleifen</li>
                   <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Geprüfte regionale Partner</li>
+                  <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Keine versteckten Gebühren von Notprofi24</li>
+                  <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Keine Vermittlungsgebühr für Sie</li>
                 </ul>
                 <Button variant="outline" size="lg" className="rounded-full bg-white hover:bg-muted" asChild>
                   <Link href="/privatkunden">Mehr erfahren</Link>
@@ -258,6 +260,8 @@ export default function Home() {
                   <li className="flex items-center gap-3 text-white font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Ein Ansprechpartner für alle Gewerke</li>
                   <li className="flex items-center gap-3 text-white font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Entlastung Ihres Teams</li>
                   <li className="flex items-center gap-3 text-white font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Professionelle Dokumentation</li>
+                  <li className="flex items-center gap-3 text-white font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Keine versteckten Gebühren von Notprofi24</li>
+                  <li className="flex items-center gap-3 text-white font-medium"><CheckCircle2 className="w-5 h-5 text-secondary" /> Keine Vermittlungsgebühr für Verwaltung und Bewohner</li>
                 </ul>
                 <Button variant="outline" size="lg" className="rounded-full bg-transparent text-white border-white/30 hover:bg-white/10" asChild>
                   <Link href="/hausverwaltungen">Mehr erfahren</Link>
