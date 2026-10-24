@@ -64,6 +64,13 @@ export default function Privatkunden() {
                 </p>
               </div>
 
+              <div className="mt-8 rounded-2xl border border-secondary/30 bg-secondary/10 p-6">
+                <h3 className="text-xl font-bold text-primary mb-3">Die Vermittlung ist für Sie kostenlos.</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Notprofi24 verrechnet Ihnen keine Vermittlungsgebühr. Kosten für Anfahrt und Reparatur sind davon getrennt und werden mit dem Fachbetrieb bzw. dem zuständigen Auftraggeber vereinbart.
+                </p>
+              </div>
+
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="bg-muted p-6 rounded-2xl">
                   <Clock className="w-8 h-8 text-secondary mb-4" />
