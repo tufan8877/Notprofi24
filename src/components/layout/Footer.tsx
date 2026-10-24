@@ -63,7 +63,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary-foreground/50 shrink-0 mt-0.5" />
-                <span className="text-primary-foreground/70 text-sm">Heiligenstädter Straße 152<br />1190 Wien</span>
+                <span className="text-primary-foreground/70 text-sm">Heiligenstädter Straße 152/6<br />1190 Wien</span>
               </li>
             </ul>
           </div>
