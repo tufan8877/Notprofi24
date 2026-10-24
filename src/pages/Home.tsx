@@ -65,8 +65,11 @@ export default function Home() {
                 <span className="text-secondary">Wir sind sofort für Sie da.</span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl font-light">
+              <p className="text-xl md:text-2xl text-gray-200 mb-6 max-w-2xl font-light">
                 24 Stunden, 7 Tage die Woche – Ihr zuverlässiger Notdienst-Vermittler in Wien und Umgebung. Ein Anruf genügt.
+              </p>
+              <p className="text-sm sm:text-base text-white/90 mb-8 max-w-2xl">
+                <strong>Keine Vermittlungsgebühr</strong> für Bewohner oder Hausverwaltungen. Kosten für Anfahrt und Reparatur werden separat mit dem Fachbetrieb bzw. Auftraggeber vereinbart.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
