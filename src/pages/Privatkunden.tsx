@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
-import { Phone, MessageCircle, Home, Clock, ShieldCheck, HeartHandshake } from "lucide-react";
+import { Phone, MessageCircle, Home, Clock, ShieldCheck, HeartHandshake, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Privatkunden() {
@@ -65,9 +65,13 @@ export default function Privatkunden() {
               </div>
 
               <div className="mt-8 rounded-2xl border border-secondary/30 bg-secondary/10 p-6">
-                <h3 className="text-xl font-bold text-primary mb-3">Die Vermittlung ist für Sie kostenlos.</h3>
+                <h3 className="text-xl font-bold text-primary mb-4">Transparente Kosten</h3>
+                <ul className="space-y-3 mb-4">
+                  <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 shrink-0 text-secondary" /> Keine versteckten Gebühren von Notprofi24</li>
+                  <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 shrink-0 text-secondary" /> Keine Vermittlungsgebühr für Sie</li>
+                </ul>
                 <p className="text-muted-foreground leading-relaxed">
-                  Notprofi24 verrechnet Ihnen keine Vermittlungsgebühr. Kosten für Anfahrt und Reparatur sind davon getrennt und werden mit dem Fachbetrieb bzw. dem zuständigen Auftraggeber vereinbart.
+                  Kosten für Anfahrt und Reparatur sind davon getrennt und werden mit dem Fachbetrieb bzw. dem zuständigen Auftraggeber vereinbart.
                 </p>
               </div>
 
