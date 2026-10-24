@@ -82,7 +82,7 @@ export default function Hausverwaltungen() {
               <li className="flex items-center gap-3 text-foreground font-medium"><CheckCircle2 className="w-5 h-5 shrink-0 text-secondary" /> Keine Vermittlungsgebühr für Verwaltung und Bewohner</li>
             </ul>
             <p className="text-muted-foreground leading-relaxed">
-              Kosten für Anfahrt und Reparatur sind davon getrennt und werden nach Vereinbarung zwischen Fachbetrieb und Auftraggeber abgerechnet.
+              Die Vermittlungsgebühr wird ausschließlich dem beauftragten Fachbetrieb verrechnet. Kosten für Anfahrt und Reparatur sind davon getrennt und werden nach Vereinbarung zwischen Fachbetrieb und Auftraggeber abgerechnet.
             </p>
           </div>
 
