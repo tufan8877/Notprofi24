@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Wrench, Zap, Hammer, Key, Phone, CheckCircle2 } from "lucide-react";
+import { Wrench, Zap, Hammer, Key, GlassWater, Phone, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Leistungen() {
@@ -24,6 +24,13 @@ export default function Leistungen() {
       icon: <Hammer className="w-12 h-12 text-secondary" />,
       description: "Ein undichtes Dach nach einem Sturm kann gewaltige Folgeschäden nach sich ziehen. Schnelle Notabdichtungen schützen Ihr Eigentum.",
       features: ["Sturmschäden & abgedeckte Dächer", "Akute Undichtheiten & Wassereintritt", "Defekte Dachfenster nach Hagel", "Lose Dachziegel (Gefahr in Verzug)"]
+    },
+    {
+      id: "glaser",
+      title: "Glaser Notdienst",
+      icon: <GlassWater className="w-12 h-12 text-secondary" />,
+      description: "Bei Glasbruch an Fenstern oder Türen vermitteln wir einen passenden Glaserbetrieb für die Absicherung und Instandsetzung.",
+      features: ["Zerbrochene Fenster- und Türscheiben", "Glasschäden nach Einbruch oder Unwetter", "Notverglasung und provisorische Sicherung", "Beschädigte Schaufensterverglasung"]
     },
     {
       id: "schlosser",
