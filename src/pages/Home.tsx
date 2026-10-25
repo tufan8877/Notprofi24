@@ -11,7 +11,7 @@ import {
   Zap, 
   Hammer, 
   Key, 
-  GlassWater,
+  PanelsTopLeft,
   ArrowRight,
   CheckCircle2
 } from "lucide-react";
@@ -37,7 +37,7 @@ export default function Home() {
     { icon: <Zap className="w-10 h-10 mb-4 text-secondary" />, title: "Elektriker", href: "/elektriker-notdienst-wien", desc: "Stromausfall, Sicherungsprobleme, Kurzschluss" },
     { icon: <Hammer className="w-10 h-10 mb-4 text-secondary" />, title: "Dachdecker", href: "/dachdecker-notdienst-wien", desc: "Sturmschäden, Undichte Dächer, Ziegel" },
     { icon: <Key className="w-10 h-10 mb-4 text-secondary" />, title: "Schlosser", href: "/schlosser-notdienst-wien", desc: "Ausgesperrt, Defekte Schlösser, Einbruchschutz" },
-    { icon: <GlassWater className="w-10 h-10 mb-4 text-secondary" />, title: "Glaser", href: "/leistungen#glaser", desc: "Glasbruch, beschädigte Fenster und Türen" },
+    { icon: <PanelsTopLeft className="w-10 h-10 mb-4 text-secondary" />, title: "Glaser", href: "/leistungen#glaser", desc: "Glasbruch, beschädigte Fenster und Türen" },
   ];
 
   return (
