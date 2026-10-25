@@ -150,8 +150,14 @@ export default function Home() {
             viewport={{ once: true, margin: "-100px" }}
           >
             {services.map((service, index) => (
-              <motion.div key={index} variants={fadeIn}>
-                <Link href={service.href} className="h-full block">
+              <motion.div
+                key={index}
+                variants={fadeIn}
+                className={services.length % 2 === 1 && index === services.length - 1
+                  ? "col-span-2 flex justify-center lg:col-span-1 lg:col-start-2"
+                  : ""}
+              >
+                <Link href={service.href} className="h-full block w-full max-w-none">
                   <div className="h-full min-h-[190px] sm:min-h-[220px] bg-white rounded-2xl border border-border/60 shadow-sm hover:shadow-lg hover:border-secondary/50 transition-all duration-300 p-5 sm:p-7 text-center flex flex-col items-center justify-center group">
                     <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center mb-4 [&_svg]:mb-0 [&_svg]:w-8 [&_svg]:h-8">
                       {service.icon}
