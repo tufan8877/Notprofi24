@@ -6,11 +6,11 @@ const SITE_URL = "https://notprofi24.at";
 const seo: Record<string, { title: string; description: string; robots?: string }> = {
   "/": {
     title: "24/7 Notdienst-Vermittlung Wien & Umgebung | Notprofi24",
-    description: "24/7 Notdienst-Vermittlung in Wien und Umgebung: Notprofi24 kontaktiert passende Fachbetriebe bei dringenden Problemen mit Installateur, Elektriker, Dachdecker oder Schlosser."
+    description: "24/7 Notdienst-Vermittlung in Wien und Umgebung: Notprofi24 kontaktiert passende Fachbetriebe bei dringenden Problemen mit Installateur, Elektriker, Dachdecker, Schlosser oder Glaser."
   },
   "/leistungen": {
     title: "Notdienste Wien & Umgebung: Installateur, Elektriker | Notprofi24",
-    description: "Fachbetriebe bei Rohrbruch, Heizungsausfall, Stromausfall, Dachschaden oder Türnotfall: Notprofi24 vermittelt Notdienst-Hilfe in Wien und Umgebung."
+    description: "Fachbetriebe bei Rohrbruch, Heizungsausfall, Stromausfall, Dachschaden, Glasbruch oder Türnotfall: Notprofi24 vermittelt Notdienst-Hilfe in Wien und Umgebung."
   },
   "/installateur-notdienst-wien": {
     title: "Installateur Notdienst Wien & Umgebung | Notprofi24",
