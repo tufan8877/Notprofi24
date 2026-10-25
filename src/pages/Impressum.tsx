@@ -33,7 +33,7 @@ export default function Impressum() {
 
             <h3 className="text-xl font-bold text-primary mt-8 mb-4">Unternehmensgegenstand</h3>
             <p className="mb-6">
-              Notdienst-Vermittlungsservice. Vermittlung von Handwerksbetrieben (Installateur, Elektriker, Dachdecker, Schlosser) an Endkunden.
+              Notdienst-Vermittlungsservice. Vermittlung von Handwerksbetrieben (Installateur, Elektriker, Dachdecker, Schlosser, Glaser) an Endkunden.
             </p>
 
             <hr className="my-8 border-border" />
