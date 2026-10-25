@@ -17,8 +17,8 @@ export default function Datenschutz() {
             <h2 className="text-2xl font-bold text-primary mb-4">1. Verantwortlicher</h2>
             <p className="mb-6">
               Verantwortlicher im Sinne der DSGVO ist:<br /><br />
-              <strong>Tufan Dönmez</strong><br />
-              Heiligenstädter Straße 152<br />
+              <strong>Tufan Dönmezyürek</strong><br />
+              Heiligenstädter Straße 152/6<br />
               1190 Wien<br />
               Österreich<br /><br />
               <strong>Telefon:</strong> 0676 61 666 46<br />
