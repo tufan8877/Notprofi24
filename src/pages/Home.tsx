@@ -143,7 +143,7 @@ export default function Home() {
           </div>
 
           <motion.div 
-            className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 max-w-5xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-5 gap-3 sm:gap-4 max-w-6xl mx-auto"
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
@@ -154,7 +154,7 @@ export default function Home() {
                 key={index}
                 variants={fadeIn}
                 className={services.length % 2 === 1 && index === services.length - 1
-                  ? "col-span-2 flex justify-center lg:col-span-1 lg:col-start-2"
+                  ? "col-span-2 flex justify-center md:col-span-1 md:col-start-auto"
                   : ""}
               >
                 <Link href={service.href} className="h-full block w-full max-w-none">
