@@ -181,43 +181,46 @@ export default function Home() {
       </section>
 
       {/* How it works */}
-      <section className="py-24 bg-primary text-white relative overflow-hidden">
+      <section className="py-20 md:py-24 bg-primary text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
-        
+
         <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">So einfach funktioniert's</h2>
-            <p className="text-lg text-primary-foreground/80">
-              Im Notfall zählt jede Minute. Unser Prozess ist darauf ausgelegt, Ihnen schnellstmöglich zu helfen. Ohne Stress, ohne Warteschleifen.
+          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-5">So einfach funktioniert's</h2>
+            <p className="text-base md:text-lg text-primary-foreground/80 leading-relaxed">
+              Im Notfall zählt jede Minute. Wir helfen Ihnen, schnell den passenden Fachbetrieb zu erreichen.
             </p>
           </div>
 
-          <div className="relative max-w-4xl mx-auto text-center">
-            <div className="grid grid-cols-2 gap-x-5 gap-y-8 md:gap-x-20 md:gap-y-12 items-start">
-              <div className="col-span-2 max-w-sm mx-auto relative z-10">
-                <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-4 shadow-lg">1</div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Kontakt aufnehmen</h3>
-                <p className="text-sm md:text-base text-primary-foreground/80">Rufen Sie uns an oder schreiben Sie uns per WhatsApp. Wir sind rund um die Uhr erreichbar.</p>
+          <ol className="relative max-w-3xl mx-auto space-y-8 md:space-y-10">
+            <div aria-hidden="true" className="absolute left-6 md:left-8 top-8 bottom-8 w-1 bg-secondary/70 rounded-full" />
+            <li className="relative flex gap-5 md:gap-7">
+              <span className="relative z-10 flex h-12 w-12 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-full bg-secondary text-primary text-xl md:text-2xl font-black shadow-lg">1</span>
+              <div className="min-w-0 pt-1 md:pt-2">
+                <h3 className="text-xl md:text-2xl font-bold mb-2">Kontakt aufnehmen</h3>
+                <p className="text-sm md:text-base text-primary-foreground/80 leading-relaxed">Rufen Sie uns an oder schreiben Sie uns per WhatsApp. Wir sind rund um die Uhr erreichbar.</p>
               </div>
-
-              <div className="relative z-10">
-                <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-4 shadow-lg">2</div>
-                <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4">Notfall schildern</h3>
-                <p className="text-sm md:text-base text-primary-foreground/80">Beschreiben Sie kurz Ihr Problem. Wir vermitteln sofort den passenden Fachbetrieb aus Ihrer Nähe.</p>
+            </li>
+            <li className="relative flex gap-5 md:gap-7">
+              <span className="relative z-10 flex h-12 w-12 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-full bg-secondary text-primary text-xl md:text-2xl font-black shadow-lg">2</span>
+              <div className="min-w-0 pt-1 md:pt-2">
+                <h3 className="text-xl md:text-2xl font-bold mb-2">Notfall schildern</h3>
+                <p className="text-sm md:text-base text-primary-foreground/80 leading-relaxed">Beschreiben Sie kurz Ihr Problem. Wir kontaktieren den passenden Fachbetrieb.</p>
               </div>
-
-              <div className="relative z-10">
-                <div className="w-20 h-20 bg-secondary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-4 shadow-lg">3</div>
-                <h3 className="text-lg md:text-2xl font-bold mb-2 md:mb-4">Profi kommt sofort</h3>
-                <p className="text-sm md:text-base text-primary-foreground/80">Ein kompetenter Techniker macht sich auf den Weg zu Ihnen und behebt den Schaden fachgerecht.</p>
+            </li>
+            <li className="relative flex gap-5 md:gap-7">
+              <span className="relative z-10 flex h-12 w-12 md:h-16 md:w-16 shrink-0 items-center justify-center rounded-full bg-secondary text-primary text-xl md:text-2xl font-black shadow-lg">3</span>
+              <div className="min-w-0 pt-1 md:pt-2">
+                <h3 className="text-xl md:text-2xl font-bold mb-2">Fachbetrieb kommt</h3>
+                <p className="text-sm md:text-base text-primary-foreground/80 leading-relaxed">Der passende Fachbetrieb macht sich auf den Weg zu Ihnen.</p>
               </div>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
-      {/* Target Audiences */}
+            {/* Target Audiences */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
