@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MessageCircle, Mail, MapPin, AlertCircle } from "lucide-react";
+import { Phone, MessageCircle, Mail, AlertCircle } from "lucide-react";
 
 export default function Kontakt() {
   return (
@@ -43,20 +43,7 @@ export default function Kontakt() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-3xl border border-border shadow-sm h-fit">
-              <div className="p-8 flex items-start gap-4">
-                <div className="bg-muted p-3 rounded-xl shrink-0"><MapPin className="w-5 h-5 text-primary" /></div>
-                <div>
-                  <h3 className="font-bold text-primary mb-1">Unternehmenssitz</h3>
-                  <address className="not-italic text-muted-foreground text-sm leading-relaxed">
-                    Heiligenstädter Straße 152/6<br />1190 Wien, Österreich<br />
-                    <span className="text-xs mt-1 block">(Kein Kundenempfang vor Ort)</span>
-                  </address>
-                </div>
-              </div>
-            </div>
-
+          <div className="max-w-xl mx-auto">
             <div id="allgemeine-anfragen" className="bg-white p-8 rounded-3xl border border-border shadow-sm flex items-start gap-4 h-fit scroll-mt-28">
               <div className="bg-muted p-3 rounded-xl shrink-0"><Mail className="w-5 h-5 text-primary" /></div>
               <div>
