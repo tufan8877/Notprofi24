@@ -44,9 +44,8 @@ export default function Kontakt() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white rounded-3xl border border-border shadow-sm overflow-hidden">
-              <iframe title="Notprofi24 Standort Wien" src="https://www.openstreetmap.org/export/embed.html?bbox=16.34,48.24,16.40,48.28&layer=mapnik&marker=48.259,16.368" className="w-full h-64 border-0" loading="lazy" />
-              <div className="p-6 flex items-start gap-4">
+            <div className="bg-white rounded-3xl border border-border shadow-sm h-fit">
+              <div className="p-8 flex items-start gap-4">
                 <div className="bg-muted p-3 rounded-xl shrink-0"><MapPin className="w-5 h-5 text-primary" /></div>
                 <div>
                   <h3 className="font-bold text-primary mb-1">Unternehmenssitz</h3>
